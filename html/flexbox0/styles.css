@@ -1,0 +1,55 @@
+body {
+    font-family: 'Montserrat';
+}
+
+/*header{
+    margin-left: 25%;
+    width: 50%
+}*/
+h1 {
+    background-color: mistyrose;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+    max-width: 1000px;
+    margin: 0px;
+
+
+}
+
+content {
+    display: flex;
+    height: auto;
+    min-height: 250px;
+    max-width: 1000px;
+
+    /*   width: 50%;
+    margin-left: 25%;*/
+
+}
+
+.sidebar {
+    flex: 1;
+    background-color: pink;
+    margin: 5px 5px 0px 0px;
+}
+
+.mainpage {
+    flex: 4;
+    background-color: pink;
+    margin: 5px 0px 0px 0px;
+
+}
+
+.content2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content2-element {
+    background-color: red;
+    margin: 15px;
+    min-height: 45px;
+    min-width: 45px;
+}

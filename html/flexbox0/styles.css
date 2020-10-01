@@ -2,14 +2,10 @@ body {
     font-family: 'Montserrat';
 }
 
-/*header{
-    margin-left: 25%;
-    width: 50%
-}*/
+
 h1 {
     background-color: mistyrose;
     text-align: center;
-    justify-content: center;
     height: 150px;
     width: auto;
     max-width: 1000px;
@@ -21,11 +17,8 @@ h1 {
 content {
     display: flex;
     height: auto;
+    justify-content: center;
     min-height: 250px;
-    max-width: 1000px;
-
-    /*   width: 50%;
-    margin-left: 25%;*/
 
 }
 
@@ -42,14 +35,14 @@ content {
 
 }
 
-.content2 {
-    display: flex;
-    justify-content: flex-end;
-}
 
-.content2-element {
-    background-color: red;
-    margin: 15px;
-    min-height: 45px;
-    min-width: 45px;
+
+@media only screen and (min-width: 1000px) {
+    .sidebar {
+        max-width: 200px;
+    }
+
+    .mainpage {
+        max-width: 800px;
+    }
 }

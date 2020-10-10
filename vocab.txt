@@ -1,0 +1,4 @@
+RENDERED means that it will read that language and show it "rendered".
+rendered means the final result (how it should look like), this expression is reused for example, 
+for css/html/js, etc... after rendering, means that it will convert what ever code you have, 
+into something that you can see

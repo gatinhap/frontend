@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS course</title>
+    <!--    <link rel="stylesheet" href="reset.css">-->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Using CSS</h2>
+
+
+            <ul>
+                <li>Inline - by using the <code>style</code> attribute inside HTML elements:</li>
+                <div class="codesamples">&lt;p style="color:red;">A red paragraph.&gt;</div>
+
+                <li>Internal - by using a <code>style</code> element in the <code>head</code> section:</li>
+                <div class="codesamples">
+                    &lt;head&gt;<br>
+                    &lt;style&gt;<br>
+                    body {background-color: powderblue;}<br>
+                    h1 {color: blue;}<br>
+                    p {color: red;}<br>
+                    &lt;style&gt;<br>
+                    &lt;head&gt;<br>
+                </div>
+
+                <li>External - by using a <code>link</code> element to link to an external CSS file:</li>
+                <div class="codesamples">
+                    &lt;head&gt;<br>
+                    &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                    &lt;head&gt;<br>
+                </div>
+
+            </ul>
+        </div>
+
+        <div class="grid-item">
+            <h2>Basic CSS properties</h2>
+
+
+            <ul>
+                <li>Use the CSS <code>border</code> property for borders. They can be set with a specific <code>width</code>, <code>style</code>, and <code>color</code>, e.g.</li>
+                <div class="codesamples">
+                    p { <br>
+                    border: 3px solid coral; <br>
+                    }
+                </div>
+                <p>The default border is <code>medium none color</code>, where <code>color</code> is the current color of the element
+                </p>
+                <p>You can modify the corners of an element’s border box with the <code>border-radius</code> property and set the same curvature for each of them
+                </p>
+                <li>Use the CSS <code>padding</code> property for space inside the border:</li>
+                <div>
+                    <ul class="nobullets">
+                        <li><code>padding-top</code></li>
+                        <li><code>padding-right</code></li>
+                        <li><code>padding-bottom</code></li>
+                        <li><code>padding-left</code></li>
+                    </ul>
+                    <li>Shorthand property:<br> <code>padding: 25px 50px 75px 100px</code><br><code>padding: 20px 10px</code><br>20px: top and bottom; 10px: right and left</li>
+                </div>
+                <li>Use the CSS <code>margin</code> property for space outside the border<br>
+                    Same logic as in case of <code>padding</code> apart from the fact that vertical margins collapse. The larger of the two vertical margins sets the distance between adjacent elements</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h2>The Box Model</h2>
+            <h4>The box model properties:</h4>
+            <ul>
+                <li>Width and height — specifies the width and height of the content area.</li>
+                <li>Padding — specifies the amount of space between the content area and the border.</li>
+                <li>Border — specifies the thickness and style of the border surrounding the content area and padding.</li>
+                <li>Margin — specifies the amount of space between the border and the outside edge of the element.</li>
+            </ul>
+        </div>
+        <div class="grid-item boxmodel-image">
+
+        </div>
+        <div class="grid-item">
+            <h2>Useful links</h2>
+            <ul class="nobullets">
+                <li><a href="https://www.w3schools.com/colors/colors_palettes.asp">css colours palettes
+                    </a></li>
+                <li><a href="https://fonts.google.com/">css fonts library
+                    </a>
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values">border styles
+                    </a>
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">140 built-in color keywords
+                    </a>
+                </li>
+                <li><a href="https://www.w3schools.com/html/html_intro.asp">basic html structure
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/css/css_align.asp">horizontal & Vertical Align
+                    </a>
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout">Grid vs Flexbox</a>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h2>Questions to gatão</h2>
+            <ul>
+                <li>How to fit image precisely into the grid item?</li>
+                <li>What's best to use for the text, p or div or sth else?</li>
+                <li>Why with CSS Reset almost everything seems to be overwritten?</li>
+                <li>Why I cannot correctly apply overflow: scroll property to grid item?</li>
+                <li>How to make flex images?
+                </li>
+                <li>Why elements loose flex properties?
+                </li>
+            </ul>
+
+        </div>
+        <div class="grid-item code-image"></div>
+
+    </div>
+
+
+
+</body>
+
+</html>

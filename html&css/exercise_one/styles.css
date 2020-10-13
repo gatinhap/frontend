@@ -1,0 +1,89 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+    font: 'Droid Serif', Verdana, Arial, sans-serif;
+    font-size: 19px;
+    position: relative;
+}
+
+.main-wrapper {
+    position: absolute;
+    left: 32%;
+
+}
+
+.sidebar {
+    padding: 15px;
+    padding-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28%;
+    padding-right: 10px;
+}
+
+nav div {
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    color: darkslategrey;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    text-align: center;
+}
+
+header {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    padding-top: 50px;
+    text-align: center;
+    font-style: italic;
+    color: darkslategrey;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+header.h1 {
+    font-size: 24px;
+}
+
+header.h2 {
+    font-size: 20px;
+}
+
+.image {
+    width: 500px;
+    filter: grayscale(100%);
+}
+
+footer {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    margin-bottom: 50px;
+}

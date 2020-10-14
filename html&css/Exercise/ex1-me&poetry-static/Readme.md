@@ -4,11 +4,13 @@ Prepare static layout from screenshot using HTML&CSS
 Requirements:
  - always centered layout
  - page content width 960px
- - logo font: 'Lato', sans-serif
- - title font: 24px
+ - logo font: 32px, weight: 500;  'Lato', sans-serif
+ - logo &: 42px, weight: bold
+ - title font: 24px, weight: 500
  - subtitle font: 20px
  - navigation font: 19px, 'Droid Serif', Verdana, Arial, sans-serif
- - content font: 19px, 'Droid Serif', Verdana, Arial, sans-serif
+ - content font: 15px, 'Droid Serif', Verdana, Arial, sans-serif
+ - footer font: 12px
 
 Text Content:
 me & poetry

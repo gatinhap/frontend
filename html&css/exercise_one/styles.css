@@ -1,76 +1,79 @@
 body {
-    width: 960px;
-    margin: 0 auto;
-    font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-    font-size: 19px;
-    position: relative;
+    font: 15px 'Droid Serif', Verdana, Arial, sans-serif;
 }
 
-.main-wrapper {
-    position: absolute;
-    left: 32%;
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
 
+.content-wrapper {
+    float: right;
+    width: 660px;
 }
 
 .sidebar {
-    padding: 15px;
-    padding-top: 140px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 28%;
-    padding-right: 10px;
+    float: left;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 75px 10px 0 0;
 }
 
-nav div {
-    border-bottom-style: solid;
-    border-width: thin;
-    border-color: lightgray;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+ul.navigation-panel {
+    font-size: 19px;
+    list-style-type: none;
+}
+
+.nav-link {
+    border-top: thin solid lightgray;
+    border-bottom: thin solid lightgray;
+    padding: 20px 0;
+}
+
+.nav-link-bottom {
+    border-bottom: thin solid lightgray;
+    padding: 20px 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
     color: darkslategrey;
 }
 
 .logo {
-    font-size: 28px;
-    font-family: 'Lato', sans-serif;
-    border-bottom-style: solid;
-    border-width: thin;
-    border-color: lightgray;
+    font: 500 32px 'Lato', sans-serif;
     text-align: center;
+}
+
+span.ampersand {
+    font: bold 42px 'Lato', sans-serif;
 }
 
 header {
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-width: thin;
-    border-color: lightgray;
-    text-align: center;
-    font-style: italic;
-    color: darkslategrey;
     margin-top: 80px;
+    border-top: thin solid lightgray;
+    border-bottom: thin solid lightgray;
+    font-style: italic;
+    text-align: center;
+    color: darkslategrey;
 }
 
-.wrapper {
+.text-wrapper {
+    margin: 25px auto;
     box-sizing: border-box;
     width: 500px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: justify;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
-header.h1 {
+header > h2 {
     font-size: 24px;
+    font-weight: 500;
 }
 
-header.h2 {
+header > h3 {
     font-size: 20px;
+    font-weight: 500;
 }
 
 .image {
@@ -79,11 +82,7 @@ header.h2 {
 }
 
 footer {
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    border-top-style: solid;
-    border-width: thin;
-    border-color: lightgray;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
+    border-top: thin solid lightgray;
+    font-size: 12px;
 }

@@ -1,7 +1,7 @@
 body {
     width: 960px;
     margin: 0 auto;
-    font: 'Droid Serif', Verdana, Arial, sans-serif;
+    font-family: 'Droid Serif', Verdana, Arial, sans-serif;
     font-size: 19px;
     position: relative;
 }
@@ -14,7 +14,7 @@ body {
 
 .sidebar {
     padding: 15px;
-    padding-top: 80px;
+    padding-top: 140px;
     position: absolute;
     top: 0;
     left: 0;
@@ -26,14 +26,14 @@ nav div {
     border-bottom-style: solid;
     border-width: thin;
     border-color: lightgray;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     color: darkslategrey;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-family: 'Lato', sans-serif;
     border-bottom-style: solid;
     border-width: thin;
@@ -49,10 +49,10 @@ header {
     border-bottom-style: solid;
     border-width: thin;
     border-color: lightgray;
-    padding-top: 50px;
     text-align: center;
     font-style: italic;
     color: darkslategrey;
+    margin-top: 80px;
 }
 
 .wrapper {

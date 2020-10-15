@@ -1,4 +1,9 @@
-body {
+:root {
+    --nav-padding: 20px 0;
+    --main-border: thin solid lightgray;
+}
+
+.body-font {
     font: 15px 'Droid Serif', Verdana, Arial, sans-serif;
 }
 
@@ -9,6 +14,7 @@ body {
 
 .content-wrapper {
     float: right;
+    margin-top: 80px;
     width: 660px;
 }
 
@@ -19,24 +25,24 @@ body {
     padding: 75px 10px 0 0;
 }
 
-ul.navigation-panel {
+.navigation-panel {
     font-size: 19px;
     list-style-type: none;
 }
 
 .nav-link {
-    border-top: thin solid lightgray;
-    border-bottom: thin solid lightgray;
-    padding: 20px 0;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+    padding: var(--nav-padding);
 }
 
 .nav-link-bottom {
-    border-bottom: thin solid lightgray;
-    padding: 20px 0;
+    border-bottom: var(--main-border);
+    padding: var(--nav-padding);
 }
 
-a,
-a:visited {
+.nav-link-text,
+.nav-link-text:visited {
     text-decoration: none;
     color: darkslategrey;
 }
@@ -46,14 +52,13 @@ a:visited {
     text-align: center;
 }
 
-span.ampersand {
+.ampersand {
     font: bold 42px 'Lato', sans-serif;
 }
 
-header {
-    margin-top: 80px;
-    border-top: thin solid lightgray;
-    border-bottom: thin solid lightgray;
+.content-title {
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
     font-style: italic;
     text-align: center;
     color: darkslategrey;
@@ -64,14 +69,15 @@ header {
     box-sizing: border-box;
     width: 500px;
     text-align: justify;
+    line-height: 150%;
 }
 
-header > h2 {
+.content-title.content-subtitle1 {
     font-size: 24px;
     font-weight: 500;
 }
 
-header > h3 {
+.content-title.content-subtitle2 {
     font-size: 20px;
     font-weight: 500;
 }
@@ -81,8 +87,8 @@ header > h3 {
     filter: grayscale(100%);
 }
 
-footer {
+.footer {
     margin: 0 auto 50px auto;
-    border-top: thin solid lightgray;
+    border-top: var(--main-border);
     font-size: 12px;
 }

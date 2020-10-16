@@ -1,104 +1,83 @@
-body {
-    width: 960px;
-    margin: 0 auto;
-    font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-    font-size: 19px;
-    /* TODO 1: To nie jest najładniejsze rozwiązanie :P */
-    position: relative;
+:root {
+    --nav-padding: 20px 0;
+    --main-border: thin solid lightgray;
 }
 
-.main-wrapper {
-    /* TODO 1: To nie jest najładniejsze rozwiązanie :P */
-    position: absolute;
-    left: 32%;
-    /* TODO: unikaj pustych linii */
+body {
+    font: 15px 'Droid Serif', Verdana, Arial, sans-serif;
+}
 
+.wrapper {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 960px;
+}
+
+.content-wrapper {
+    float: right;
+    width: 660px;
 }
 
 .sidebar {
-    /* TODO: Tutaj przyczepię się do organizacji kodu
-        1. grupuj te same deklaracje obok siebie
-        2. Zauważ co się wydarzyło po kolei w deklaracjach (linia 28, 29 i 36):
-            - najpierw ustawiasz wszystkie paddingi dla sidebabra o wartości 15px
-            - później zmieniasz górny padding na 140px
-            - na koniec robisz to samo z prawym paddingiem
-            Co robi wtedy przeglądarka? Najpierw przypisuje wszystkie paddingi jako 15px, a później je zmienia.
-            To trochę jak wrzucenie małej bomby, a może bardziej kapiszona, niby nie groźne ale po co fatygować przegląrake xD
-            Lepsza będzie skrócona forma:
-            padding: 140px 10px 15px 15px */
-    padding: 15px;
-    padding-top: 140px;
-    /* TODO 1: To nie jest najładniejsze rozwiązanie :P */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 28%;
-    /* Moi koledzy są u góry :( */
+    float: left;
+    box-sizing: border-box;
+    width: 300px;
     padding-right: 10px;
 }
 
-nav div {
-    /* TODO: Korzystaj ze skróconych form, np.:
-        border: 1px thin lightgray
-        są same plusy, bo:
-        + z trzech linijek kodu robi się jedna,
-        + mniej pisania,
-        + zwiększa się czytelność kodu szczególnie gdy nad projektem pracuje kilka osób,
-        + plik zajmuje mniej miejsca w pamięci */
-    border-bottom-style: solid;
-    border-width: thin;
-    border-color: lightgray;
-    /* TODO: zgrupowanie deklaracji w jedną */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+.navigation-panel {
+    font-size: 19px;
+    list-style-type: none;
+}
+
+.navigation-panel > li {
+    border-bottom: var(--main-border);
+    padding: var(--nav-padding);
+}
+
+.navigation-panel > li:first-child {
+    border-top: var(--main-border);
+}
+
+.nav-link-text,
+.nav-link-text:visited {
+    text-decoration: none;
     color: darkslategrey;
 }
 
 .logo {
-    font-size: 28px;
-    font-family: 'Lato', sans-serif;
-    /* TODO: zgrupowanie deklaracji w jedną */
-    border-bottom-style: solid;
-    border-width: thin;
-    border-color: lightgray;
+    font: 500 32px 'Lato', sans-serif;
     text-align: center;
 }
 
-header {
-    width: 660px;
-    /* TODO: zgrupowanie deklaracji w jedną */
-    margin-left: auto;
-    margin-right: auto;
-    /* TODO: tak samo jak wyżej */
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-width: thin;
-    border-color: lightgray;
-    text-align: center;
+.ampersand {
+    font: bold 42px 'Lato', sans-serif;
+}
+
+.content-header {
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
     font-style: italic;
+    text-align: center;
     color: darkslategrey;
-    /* Moi koledzy są u góry :( */
-    margin-top: 80px;
 }
 
-.wrapper {
+.text-wrapper {
+    margin: 25px auto;
     box-sizing: border-box;
     width: 500px;
-    /* TODO: zgrupowanie deklaracji w jedną */
-    margin-left: auto;
-    margin-right: auto;
     text-align: justify;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    line-height: 150%;
 }
-/*TODO: To nie zadziała. Niepoprawne selektory */
-header.h1 {
+
+.content-title.content-subtitle {
     font-size: 24px;
+    font-weight: 500;
 }
-/*TODO: To nie zadziała. Niepoprawne selektory */
-header.h2 {
+
+.content-title.content-subtitle {
     font-size: 20px;
+    font-weight: 500;
 }
 
 .image {
@@ -106,14 +85,8 @@ header.h2 {
     filter: grayscale(100%);
 }
 
-footer {
-    width: 660px;
-    /* TODO: zgrupowanie deklaracji w jedną */
-    margin-left: auto;
-    margin-right: auto;
-    /* TODO: zgrupowanie deklaracji w jedną */
-    border-top-style: solid;
-    border-width: thin;
-    border-color: lightgray;
-    margin-bottom: 50px;
+.footer {
+    margin: 0 auto 50px auto;
+    border-top: var(--main-border);
+    font-size: 12px;
 }

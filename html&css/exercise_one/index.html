@@ -4,80 +4,57 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Znalazłam fonty, więc dodaje... Sorki zapomniałam dodac ich do wymagań -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" type="text/css" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>me&amp;poetry</title>
 </head>
 
-<!--TODO: Wymagania mówią o szerokości strony 960px, spełniłaś poprawnie to wymaganie.
-          Natomiast mam sugestię, że lepszą praktyką będzie jeśli owrappujesz cały dokument dodatkowym divem,
-          do którego przepiszesz style CSSowe takie jak width i margin z taga <body>. Jest to bardziej eleganckie rozwiązanie
-          <body>
-              <div class="wrapper">
-                  <nav>
-                  <article>
-              </div>
-          </body> -->
 <body>
-    <aside class="sidebar">
-        <div class="logo">
-        <!-- TODO: Dobrą praktyką SEO jeśli chodzi o strukturę HTML jest użycie taga <h1> tylko raz dla tytułu strony -->
-            <h1>me&amp;poetry</h1>
-        </div>
-        <nav>
-            <!-- TODO: Tutaj dodałaś klasę, która jest zbędna, ponieważ:
-                    1. nie używasz jej nigdzie
-                    2. nazwa klasy sugeruje, że powinna być przypisana do elemtu wyżej -->
-            <div class="navigation-panel">Lorem ipsum</div>
-            <div>Rem sint</div>
-            <div>Reprehenderit</div>
-            <div>Quam iure</div>
-            <!-- TODO: Patrząc na design nawigacji widzimy, że nawigacaja posiada powtarzające się elementy,
-                    więc od razu narzuca się tutaj, aby zastosować HTMLową listę elementów.
-                    Dodatkowo definicja taga <nav> (https://www.w3schools.com/tags/tag_nav.asp)
-                    mówi o tym, że tag <nav> to zestaw linków nawigacyjnych czego zabrakło
-                    Dla tej seklcji sugeruję, więc rozwiązanie:
-                    <ul class="navigation-panel">
-                        <li><a href="#">Lorem ipsum</a></li>
-                        <li><a href="#">Rem sint</a></li>
-                        <li><a href="#">Reprehenderit</a></li>
-                        <li><a href="#">Quam iure</a></li>
-                    </ul> -->
-        </nav>
-    </aside>
-    <div class="main-wrapper">
-        <header>
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <h2>Sunt inventore similique</h2>
-        </header>
-        <article class="wrapper">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore provident perferendis dignissimos officiis officia sequi quibusdam animi nemo mollitia ut expedita quia ratione, dolore saepe molestiae, repudiandae odio soluta earum!</p>
-            <ul>
-                <li>Lorem ipsum dolor.</li>
-                <li>Omnis, perspiciatis placeat.</li>
-                <!--TODO: Błędnie zagnieżdżona lista, poprawna forma: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested-->
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div>
+                <h1 class="logo">me <span class="ampersand">&amp;</span> poetry</h1>
+            </div>
+            <ul class="navigation-panel">
+                <li><a class="nav-link-text" href="#">Lorem ipsum</a></li>
+                <li><a class="nav-link-text" href="#">Rem sint</a></li>
+                <li><a class="nav-link-text" href="#">Reprehenderit</a></li>
+                <li><a class="nav-link-text" href="#">Quam iure</a></li>
+            </ul>
+        </aside>
+        <div class="content-wrapper">
+            <header class="content-header">
+                <h2 class="content-title">Lorem ipsum dolor sit amet consectetur</h2>
+                <h3 class="content-subtitle">Sunt inventore similique</h3>
+            </header>
+            <article class="text-wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore provident perferendis dignissimos officiis officia sequi quibusdam animi nemo mollitia ut expedita quia ratione, dolore saepe molestiae, repudiandae odio soluta earum!</p>
                 <ul>
                     <li>Lorem ipsum dolor.</li>
-                    <ul>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Et porro, repellat?</li>
-                    </ul>
-                    <li>Aliquam, debitis, ratione.</li>
-                    <li>Ipsum, et, quisquam?</li>
+                    <li>Omnis, perspiciatis placeat.
+                        <ul>
+                            <li>Lorem ipsum dolor.
+                                <ul>
+                                    <li>Lorem ipsum dolor.</li>
+                                    <li>Et porro, repellat?</li>
+                                </ul>
+                            </li>
+                            <li>Aliquam, debitis, ratione.</li>
+                            <li>Ipsum, et, quisquam?</li>
+                        </ul>
+                    </li>
+                    <li>Nostrum, perspiciatis repellendus.</li>
+                    <li>Ea, iste, totam.</li>
                 </ul>
-                <li>Nostrum, perspiciatis repellendus.</li>
-                <li>Ea, iste, totam.</li>
-            </ul>
-            <p>Molestiae eius harum, sit ad, vel suscipit atque sint eveniet, est, cupiditate omnis voluptatibus porro! Est laboriosam ipsa aliquid vero pariatur esse corporis quos facilis beatae temporibus iure, quam in!</p>
-            <!--  TODO: Organizacja atrybutów taga <img>, "src" zawsze pierwsze, czyli poprawna kolejnosc: src, class, alt-->
-            <div><img class="image" alt="picture of the street" src="photo.jpg"></div>
-            <p>Iste dignissimos a, quia voluptas minima quas ex ipsum officiis. Quas qui optio, fugit magni commodi natus labore officia totam, minima fuga unde perferendis sit, aut est nam sed, illum?</p>
-        </article>
-        <footer>2015 © Maciej Żukiewicz</footer>
+                <p>Molestiae eius harum, sit ad, vel suscipit atque sint eveniet, est, cupiditate omnis voluptatibus porro! Est laboriosam ipsa aliquid vero pariatur esse corporis quos facilis beatae temporibus iure, quam in!</p>
+                <div><img src="photo.jpg" class="image" alt="picture of the street"></div>
+                <p>Iste dignissimos a, quia voluptas minima quas ex ipsum officiis. Quas qui optio, fugit magni commodi natus labore officia totam, minima fuga unde perferendis sit, aut est nam sed, illum?</p>
+            </article>
+            <footer class="footer">2015 © Maciej Żukiewicz</footer>
+        </div>
     </div>
 </body>
 

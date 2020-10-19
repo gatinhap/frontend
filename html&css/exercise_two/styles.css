@@ -61,7 +61,6 @@ body {
     margin-right: auto;
     border-top: var(--main-border);
     border-bottom: var(--main-border);
-    width: 76%;
     font-style: italic;
     text-align: center;
     color: darkslategrey;
@@ -69,8 +68,9 @@ body {
 
 .text-wrapper {
     margin: 25px auto;
+    padding: 0 3em;
     box-sizing: border-box;
-    width: 76%;
+    max-width: 500px;
     text-align: justify;
     line-height: 150%;
 }

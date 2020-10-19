@@ -127,7 +127,7 @@ body {
 @media only screen and (min-width: 900px) {
     .wrapper {
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 28% 68%;
         grid-column-gap: 20px;
         grid-template-areas:
             "page-title header"

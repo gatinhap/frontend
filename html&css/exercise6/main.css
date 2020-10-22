@@ -13,15 +13,11 @@ body {
     margin-bottom: 60px;
 }
 
-.container {
-    margin: 0 auto;
-}
-
 .customers {
-    border: 1px solid #ccc;
-    background-color: #e9e9e9;
-    min-width: 850px;
-    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #5b8442;
+    border-collapse: collapse;
+    width: auto;
 }
 
 .customers th,
@@ -30,15 +26,20 @@ body {
 }
 
 .customers th {
-    background-color: #ccc;
     padding: 15px 0;
+    color: white;
+    background-color: #5b8442;
 }
 
 .customers td {
     border-bottom: 1px solid #ccc;
 }
 
-@media screen and (max-width: 760px) {
+.customers tr:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+@media only screen and (max-width: 760px) {
 
     .customers thead,
     tbody,
@@ -46,16 +47,43 @@ body {
     td,
     tr {
         display: block;
+        font-weight: bold;
     }
-    
+
     .customers {
-        min-width: 100%;
+        border: none;
+        width: 100%;
     }
 
     .name {
-        font-weight: bold;
-        color: white;
+        display: block;
+        margin-top: 1em;
         text-align: center;
-        background-color: green;
+        color: white;
+        background-color: #5b8442;
+    }
+
+    .customers thead {
+        display: none;
+    }
+
+    td::before {
+        content: attr(data-col-name);
+        float: left;
+        display: inline-block;
+        margin-right: 1em;
+        width: 50%;
+        font-weight: normal;
+        text-align: right;
+    }
+
+    td.last-element {
+        border-bottom: 2px solid #5b8442;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .customers {
+        width: 100%;
     }
 }

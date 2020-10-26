@@ -73,25 +73,34 @@ body {
         display: none;
     }
 
+    .main-menu {
+        position: relative;
+    }
+
     .main-menu .mobile-menu-icon {
-        float: right;
+        position: absolute;
+        left: 0;
+        top: 0;
         display: block;
+        margin-left: 15px;
     }
 }
 
 @media only screen and (max-width: 800px) {
+
     .main-menu.responsive {
         position: relative;
     }
 
-    .main-menu.responsive li.mobile-menu-icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
     .main-menu.responsive li {
+        position: absolute;
+        z-index: 1;
         display: block;
         text-align: center;
+    }
+
+    .fa.fa-bars {
+        border-radius: 50%;
+        width: 20px;
     }
 }

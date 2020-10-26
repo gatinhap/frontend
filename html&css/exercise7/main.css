@@ -38,8 +38,15 @@ body {
     font-size: 1rem;
 }
 
-.main-menu li a:hover {
-    background-color: rgba(255, 255, 255, .1);
+.main-menu .mobile-menu-icon {
+    display: none;
+}
+
+.fa.fa-bars {
+    border: thin solid white;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 20px;
 }
 
 .section {
@@ -58,4 +65,33 @@ body {
 .section p {
     font-size: 1.188rem;
     font-weight: 300;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-menu li:not(:last-child) {
+        display: none;
+    }
+
+    .main-menu .mobile-menu-icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main-menu.responsive {
+        position: relative;
+    }
+
+    .main-menu.responsive li.mobile-menu-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .main-menu.responsive li {
+        display: block;
+        text-align: center;
+    }
 }

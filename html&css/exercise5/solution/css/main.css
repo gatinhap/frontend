@@ -1,0 +1,76 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.section {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.section p {
+    font-weight: 300;
+}
+
+table {
+    border: 1px solid #ccc;
+    background-color: #E9E9E9;
+}
+
+table th,
+table td {
+    padding: 10px 5px;
+}
+
+table th {
+    background-color: #ccc;
+}
+
+table td {
+    border-bottom: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 640px){
+    .flip-table {
+        width: 100%;
+    }
+
+    .flip-table,
+    .flip-table thead,
+    .flip-table thead tr,
+    .flip-table thead th,
+    .flip-table tbody,
+    .flip-table tbody td {
+        display: block;
+    }
+
+    .flip-table thead {
+        float: left;
+    }
+
+    .flip-table tbody {
+        width: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .flip-table tbody td {
+        border-bottom: none;
+    }
+
+    .flip-table tbody tr {
+        display: inline-block;
+    }
+}

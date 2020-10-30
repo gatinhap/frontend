@@ -1,3 +1,10 @@
+:root {
+    --shadow: 5px 8px 15px;
+    --shadow-text: 5px 8px 15px #512123;
+    --primary-color--light: #ffe7ff;
+    --primary-color--dark: #512123;
+}
+
 body {
     font: 600 30px 'Cutive Mono', monospace;
     opacity: 0.9;
@@ -12,7 +19,7 @@ body {
     background-size: cover;
 }
 
-.parallax-1 {
+.parallax--short {
     height: 70vh;
     background-image: url("winter.jpg");
     background-attachment: fixed;
@@ -21,30 +28,33 @@ body {
     background-size: cover;
 }
 
-.header-wrapper {}
-
-.header {
+.headline {
     position: absolute;
     margin: 25% 10%;
+    box-shadow: var(--shadow-text);
+    padding: 0.25em;
     font: small-caps 700 50px 'Cutive Mono', monospace;
     letter-spacing: 1px;
-    color: #ffe7ff;
+    color: var(--primary-color--light);
 }
 
-.first-section {
+.primary-card {
     position: absolute;
     margin-left: 10%;
+    box-shadow: var(--shadow-text);
+    padding: 0.5em;
     width: 60vw;
-    color: #ffe7ff;
+    color: var(--primary-color--light);
 }
 
-.section-tip {
+.card {
     position: absolute;
     margin-left: 10%;
+    box-shadow: var(--shadow);
     width: 60vw;
-    padding: 3px;
+    padding: 0.5em;
     background-color: rgb(255, 231, 255, 0.6);
-    color: #512123;
+    color: var(--primary-color--dark);
 }
 
 @media only screen and (max-width:500px) {
@@ -61,8 +71,8 @@ body {
 
 @media only screen and (min-width:1000px) {
 
-    .section-tip,
-    .first-section {
+    .card,
+    .primary-card {
         width: 50vw;
     }
 }

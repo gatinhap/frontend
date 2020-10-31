@@ -1,8 +1,13 @@
-function myFunction() {
-    var x = document.getElementById("nav-bar-menu");
-    if (x.className === "main-menu") {
+function showNav() {
+    var x = document.getElementById("nav-container");
+    if (x.className === "container") {
         x.className += " responsive";
     } else {
-        x.className = "main-menu";
+        x.className = "container";
     }
+}
+
+function hideNav() {
+    var element = document.getElementById("nav-container");
+    element.classList.remove("responsive");
 }

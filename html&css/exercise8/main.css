@@ -1,52 +1,58 @@
 body {
     background-color: #1a1516;
-    color: #fff;
     font-family: 'Lato', sans-serif;
+    color: #fff;
 }
 
 .container {
-    max-width: 1120px;
     margin: 0 auto;
+    max-width: 1120px;
     padding: 0 20px;
 }
 
 .nav-bar {
-    overflow: auto;
-    background-color: rgba(0, 0, 0, .8);
     border-bottom: 1px solid rgba(255, 255, 255, .25);
+    background-color: rgba(0, 0, 0, .8);
 }
 
-.main-menu {
+.nav-menu-icon, .nav-exit-icon {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    display: none;
+    border: solid thin gray;
+    border-radius: 50%;
+    width: 25px;
+    padding: 0.5em;
+    font-size: 25px;
+    font-weight: 150;
+    color: white;
+}
+
+.nav-menu {
+    display: table;
     margin: 0;
+    width: 100%;
     padding: 0;
     list-style: none;
-    display: table;
-    width: 100%;
 }
 
-.main-menu li {
+.nav-menu a {
     display: table-cell;
     text-align: center;
-}
-
-.main-menu li a {
-    display: block;
     padding: 15px 0;
+    font-size: 1rem;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1rem;
 }
 
-.main-menu .mobile-menu-icon {
-    display: none;
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, .1);
 }
 
-.fa.fa-bars {
-    border: thin solid white;
-    border-radius: 5px;
-    padding: 8px;
-    font-size: 20px;
+.main-wrapper {
+    text-align: justify;
 }
 
 .section {
@@ -57,41 +63,59 @@ body {
 .section-heading {
     margin: 30px 0;
     font-size: 1.875rem;
-    text-transform: uppercase;
     font-weight: 300;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .section p {
     font-size: 1.188rem;
     font-weight: 300;
-    text-align: justify;
 }
 
 @media only screen and (max-width: 800px) {
-    .main-menu li:not(:last-child) {
+
+    .nav-bar {
+        border-bottom: none;
+    }
+
+    .nav-menu {
         display: none;
     }
 
-    .main-menu .mobile-menu-icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .main-menu.responsive {
-        position: relative;
+    .nav-menu-icon {
+        display: inline-block;
     }
 
-    .main-menu.responsive li.mobile-menu-icon {
+    .container.responsive body {
+        background-color: black;
+    }
+
+    .container.responsive .nav-menu-icon {
+        display: none;
+    }
+
+    .container.responsive .nav-exit-icon {
+        display: inline-block;
+    }
+
+    .container.responsive .nav-menu {
         position: absolute;
-        right: 0;
-        top: 0;
+        flex-direction: column;
+        display: flex;
+        width: calc(100vw - 40px);
     }
 
-    .main-menu.responsive li {
+    .container.responsive .nav-menu a {
         display: block;
         text-align: center;
+    }
+
+    .container.responsive .section-heading {
+        color: #454545;
+    }
+
+    .container.responsive .section p {
+        color: #454545;
     }
 }

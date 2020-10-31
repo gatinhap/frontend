@@ -16,7 +16,7 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, .25);
 }
 
-.main-menu {
+.nav-menu {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -24,12 +24,12 @@ body {
     width: 100%;
 }
 
-.main-menu li {
+.nav-menu li {
     display: table-cell;
     text-align: center;
 }
 
-.main-menu li a {
+.nav-menu li a {
     display: block;
     padding: 15px 0;
     color: #fff;
@@ -38,7 +38,7 @@ body {
     font-size: 1rem;
 }
 
-.main-menu li a:hover {
+.nav-menu li a:hover {
     background-color: rgba(255, 255, 255, .1);
 }
 

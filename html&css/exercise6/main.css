@@ -67,7 +67,7 @@ body {
         display: none;
     }
 
-    td::before {
+    .customers td::before {
         content: attr(data-col-name);
         float: left;
         display: inline-block;
@@ -77,7 +77,7 @@ body {
         text-align: right;
     }
 
-    td.last-element {
+    .customers td.last-element {
         border-bottom: 2px solid #5b8442;
     }
 }

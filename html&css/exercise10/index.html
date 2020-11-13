@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <title>Responsive media</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&amp;subset=latin,latin-ext"
           rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 300) {
+                    $("#minimize").addClass("video-wrapper--minimize").removeClass("video-wrapper");
+                } else {
+                    $("#minimize").removeClass("video-wrapper--minimize").addClass("video-wrapper");
+                }
+            })
+        })
+    </script>
 </head>
 
 <body>
 <section class="section">
     <div class="container">
-        <div class="video-wrapper">
+        <div class="video-wrapper" id="minimize">
             <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/uToEunO3DcM"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

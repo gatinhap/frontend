@@ -1,2 +1,11 @@
 books
 html&css/.idea/
+.idea/frontend_test.iml
+.idea/modules.xml
+.idea/prettier.xml
+.idea/saveactions_settings.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/jsLinters/eslint.xml

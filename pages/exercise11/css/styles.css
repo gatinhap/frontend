@@ -1,37 +1,27 @@
-
 body {
   margin: 0 auto;
-  font: 400 12px Spartan, sans-serif;
-}
+  font: 400 12px Spartan, sans-serif; }
 
-body {
-  a {
-    text-decoration: none;
-    color: black;
-  }
+body a {
+  text-decoration: none;
+  color: black; }
 
-  a:hover {
-    color: black;
-  }
-}
+body a:hover {
+  color: black; }
 
 .nav-panel {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .hero-img {
   grid-area: top-image;
   position: relative;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .hero-img--desktop {
-  display: none;
-}
+  display: none; }
 
 .hero-img--mobile {
-  width: 100%;
-}
+  width: 100%; }
 
 .hero-img--left-arrow {
   position: absolute;
@@ -39,8 +29,7 @@ body {
   right: 53px;
   padding: 20px;
   background-color: black;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .hero-img--right-arrow {
   position: absolute;
@@ -48,115 +37,83 @@ body {
   right: 0;
   padding: 20px;
   background-color: black;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .main-description {
   grid-area: top-text;
-  width: 80%;
-}
+  width: 80%; }
 
 .img-dark {
   grid-area: middle-image;
-  width: 100%;
-}
+  width: 100%; }
 
 .sub-description {
   grid-area: bottom-text;
-  width: 80%;
-}
+  width: 80%; }
 
 .img-light {
   grid-area: bottom-image;
-  width: 100%;
-}
+  width: 100%; }
 
 .wrapper {
   display: grid;
-  grid-template-areas:
-  "top-image"
-  "top-text"
-  "middle-image"
-  "bottom-text"
-  "bottom-image";
+  grid-template-areas: "top-image" "top-text" "middle-image" "bottom-text" "bottom-image";
   grid-gap: 3em;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 10px;
   width: 375px;
-  justify-items: center;
-}
+  justify-items: center; }
 
 .nav-container {
-  position: relative;
-}
+  position: relative; }
 
 .logo {
   position: absolute;
   z-index: 1;
   top: 80px;
   left: 50%;
-  transform: translate(-50%);
-}
+  transform: translate(-50%); }
 
 .main-description__header {
-  font: 700 24px Spartan, sans-serif;
-}
+  font: 700 24px Spartan, sans-serif; }
 
 .main-description__link {
   font: small-caps 600 16px Spartan, sans-serif;
   letter-spacing: 0.8em;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .main-description__arrow {
   padding-left: 2em;
   vertical-align: middle;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .sub-description__header {
   font: 700 13px Spartan, sans-serif;
   letter-spacing: 0.4em;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .attribution {
-  font-size: 11px;
-}
+  font-size: 11px; }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
-}
+  color: #3e52a3; }
 
 @media only screen and (min-width: 900px) {
   .wrapper {
     display: grid;
     grid-template-columns: minmax(29%, 420px) minmax(29%, 420px) minmax(11.5%, 160px) minmax(30.5%, 440px);
     grid-template-rows: minmax(auto, 534px) minmax(auto, 266px);
-    //grid-template-areas:
-    //"top-image" "top-text"
-    //"middle-image" "bottom-text"  "bottom-image";
     grid-gap: 0;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 10px;
     width: auto;
-    max-width: 1440px;
-  }
-
+    max-width: 1440px; }
   .hero-img {
-    display: contents;
-    //grid-column: 1/3;
-    //grid-row: 1/2;
-    //position: static;
-    //box-sizing: border-box;
-    //width: 100%;
-  }
-
+    display: contents; }
   .hero-img--left-arrow {
     display: none;
-
     position: absolute;
     bottom: 0;
     left: 100%;
@@ -164,54 +121,35 @@ body {
     grid-row: 1/2;
     padding: 20px;
     background-color: black;
-    cursor: pointer;
-  }
-
+    cursor: pointer; }
   .hero-img--right-arrow {
     display: none;
-
     position: absolute;
     bottom: 0;
-    //right: 0;
     left: 105%;
     grid-column: 5/6;
     grid-row: 1/2;
     padding: 20px;
     background-color: black;
-    cursor: pointer;
-  }
-
+    cursor: pointer; }
   .hero-img--desktop {
     grid-column: 1/3;
     grid-row: 1/2;
     display: initial;
-    width: 100%;
-  }
-
+    width: 100%; }
   .hero-img--mobile {
-    display: none
-  }
-
+    display: none; }
   .main-description {
     grid-column: 3/5;
-    grid-row: 1/2;
-  }
-
+    grid-row: 1/2; }
   .img-dark {
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 100%;
-  }
-
+    width: 100%; }
   .sub-description {
     grid-column: 2/4;
-    grid-row: 2/3;
-
-  }
-
+    grid-row: 2/3; }
   .img-light {
     grid-column: 4/5;
     grid-row: 2/3;
-    object-fit: cover;
-  }
-}
+    object-fit: cover; } }

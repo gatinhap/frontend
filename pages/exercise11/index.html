@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="js-script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Room homepage</title>
 </head>
 <body>
-<header class="nav-container">
-    <nav class="nav-panel">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
+<div class="nav-wrapper">
+    <header id="nav-container" class="nav-container">
+        <img onclick="showNav()" class="nav-menu-open" src="images/icon-hamburger.svg" alt="Enter menu">
+        <a onclick="hideNav()"><img class="nav-menu-exit" src="images/icon-close.svg" alt="Exit menu"></a>
+        <nav class="nav-panel">
+            <a href="#">home</a>
+            <a href="#">shop</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+        </nav>
+    </header>
+    <img class="logo" src="images/logo.svg" alt="Company logo">
+</div>
 <main class="wrapper">
-    <div class="logo-container">
-        <img class="logo" src="images/logo.svg" alt="Company logo">
-    </div>
     <div class="hero-img">
         <img class="hero-img--desktop" src="images/desktop-image-hero-1.jpg" alt="Table with two white chairs">
         <img class="hero-img--mobile" src="images/mobile-image-hero-1.jpg" alt="Table with two white chairs">
